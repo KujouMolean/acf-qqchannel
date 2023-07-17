@@ -18,10 +18,10 @@ public class QQProCommandManager extends CommandManager<User, QQProCommandIssuer
 
     public QQProCommandManager(Bot bot) {
         this.bot = bot;
-        this.formatters.put(MessageType.ERROR, defaultFormatter = new QQProMessageFormater());
-        this.formatters.put(MessageType.SYNTAX, new QQProMessageFormater());
-        this.formatters.put(MessageType.INFO, new QQProMessageFormater());
-        this.formatters.put(MessageType.HELP, new QQProMessageFormater());
+        this.formatters.put(MessageType.ERROR, defaultFormatter = new QQProMessageFormater("", "", ""));
+        this.formatters.put(MessageType.SYNTAX, new QQProMessageFormater("", "", ""));
+        this.formatters.put(MessageType.INFO, new QQProMessageFormater("", "", ""));
+        this.formatters.put(MessageType.HELP, new QQProMessageFormater("", "", ""));
     }
 
     @Override
